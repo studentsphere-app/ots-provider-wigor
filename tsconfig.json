@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@studentsphere/ots-core": ["../ots-core/index.ts"],
+    },
+  },
+  "references": [{ "path": "../ots-core" }],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+}
