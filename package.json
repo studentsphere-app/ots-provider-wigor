@@ -1,6 +1,6 @@
 {
   "name": "@studentsphere/ots-provider-wigor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Wigor Timetable implementation of a Open Timetable Scrapper Provider",
   "author": {

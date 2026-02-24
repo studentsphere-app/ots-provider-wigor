@@ -3,7 +3,25 @@
   <h1>@studentsphere/ots-provider-wigor</h1>
 </div>
 
-The official Wigor Timetable implementation of an Open Timetable Scraper (OTS) provider
+<div align="center">
+  <img src=".github/assets/wigor.png" alt="OTS Logo" width="100" />
+  <b>Wigor Service E-EDT</b>
+  <p>Wigor is the central ERP system for the C&D and IGENIA Education groups, providing integrated management for the schools listed below.</p>
+</div>
+
+Wigor Timetable implementation of an Open Timetable Scraper (OTS) provider
+
+> [!CAUTION]
+> **LEGAL DISCLAIMER AND LIMITATION OF LIABILITY**
+>
+> This project, `@studentsphere/ots-provider-wigor`, is an independent open-source tool. It is **not affiliated with, authorized, maintained, sponsored, or endorsed** by the **[Compétences & Développement (C&D)](https://www.competences-developpement.com)** group, **[IGENSIA Education](https://www.igensia-education.fr)**, or the developers of the **[WigorServices](http://wigorservices.net)** platform.
+>
+> 1. **Intellectual Property:** All trademarks, logos, and brand names are the property of their respective owners. Their mention here is strictly for identification and compatibility purposes and does not imply any association.
+> 2. **Responsible Use:** This tool is provided for educational purposes and to facilitate interoperability. It is the end-user's sole responsibility to ensure that using this scraper complies with their institution's Terms of Service (ToS) and local laws regarding automated data access.
+> 3. **No Warranty:** The software is provided "as is", without warranty of any kind. The developer assumes no liability for account suspensions, access blocks, or any legal actions taken by the aforementioned groups resulting from the use of this tool.
+> 4. **Service Changes:** Since this tool relies on parsing third-party web pages, functionality may break at any time due to updates on the official WigorServices portals.
+>
+> **By using this package, you acknowledge and agree to these terms in full.**
 
 This provider specializes in extracting and retrieving data from Wigor-based school portals. It automates the connection and parsing of Wigor timetables, converting raw HTML into a clean, standardized format for the Open Timetable Scrapper ecosystem.
 
