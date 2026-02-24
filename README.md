@@ -6,7 +6,7 @@
 <div align="center">
   <img src=".github/assets/wigor.png" alt="OTS Logo" width="100" />
   <b>Wigor Service E-EDT</b>
-  <p>Wigor is the central ERP system for the C&D and IGENIA Education groups, providing integrated management for the schools listed below.</p>
+  <p>Wigor is the central ERP system for the <b>C&D</b> and <b>IGENSIA</b> Education groups, powering management acros all schools within these groups.</p>
 </div>
 
 Wigor Timetable implementation of an Open Timetable Scraper (OTS) provider
