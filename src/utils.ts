@@ -2,7 +2,7 @@ import {
 	CD_SCHOOLS,
 	CD_SCHOOLS_TIMETABLE_ENDPOINT,
 	IGENSIA_SCHOOLS_TIMETABLE_ENDPOINT,
-} from "@/constants";
+} from "./constants";
 
 /**
  * Determines the schedule server URL based on the school ID.

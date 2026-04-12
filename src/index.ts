@@ -10,9 +10,9 @@ import {
 	IGENSIA_SCHOOLS,
 	IGENSIA_SCHOOLS_TIMETABLE_ENDPOINT,
 	LOGIN_SERVER_ENDPOINT,
-} from "@/constants";
-import { SCHOOLS_DATA } from "@/schools";
-import type { WigorEventJSON } from "@/types";
+} from "./constants";
+import { SCHOOLS_DATA } from "./schools";
+import type { WigorEventJSON } from "./types";
 
 const getScheduleServer = (schoolId?: string) => {
 	if (schoolId && CD_SCHOOLS.includes(schoolId)) {
