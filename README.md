@@ -39,39 +39,6 @@ npm install @studentsphere/ots-provider-wigor
 - **Multi-School Support**: Built-in support for numerous schools and campuses using the Wigor system.
 - **Standardized Output**: Converts complex HTML timetable grids into clean, standardized `Course` objects defined by `@studentsphere/ots-core`.
 
-## Usage
-
-To use the Wigor provider in your application, instantiate the `WigorProvider` class. You can then validate user credentials and fetch their schedule.
-
-```typescript
-import { WigorProvider } from "@studentsphere/ots-provider-wigor";
-
-const provider = new WigorProvider();
-
-// 1. Validate credentials
-const isValid = await provider.validateCredentials({
-  identifier: "student_username",
-  password: "student_password"
-});
-
-if (isValid) {
-  // 2. Fetch the schedule for a specific date range
-  const fromDate = new Date("2026-10-01T00:00:00Z");
-  const toDate = new Date("2026-10-31T23:59:59Z");
-
-  const courses = await provider.getSchedule(
-    {
-      identifier: "student_username",
-      password: "student_password"
-    },
-    fromDate,
-    toDate
-  );
-
-  console.log(courses);
-}
-```
-
 ## Supported C&D and IGENSIA Education Schools
 
 | Logo                                                                         | Institution                |
@@ -104,14 +71,6 @@ if (isValid) {
 | <img src=".github/assets/schools/ecm.png" width="50">                        | ECM                        |
 | <img src=".github/assets/schools/emi.png" width="50">                        | EMI                        |
 | <img src=".github/assets/schools/esa.png" width="50">                        | ESA                        |
-
-## Dependencies
-
-This provider relies on several key packages to function:
-- `axios` & `axios-cookiejar-support`: For handling HTTP requests and maintaining session cookies.
-- `cheerio`: For parsing and extracting data from the Wigor HTML timetable grids.
-- `tough-cookie`: For robust cookie management during the authentication flow.
-- `p-limit`: For managing concurrency when fetching multiple weeks of schedule data.
 
 ## License
 
