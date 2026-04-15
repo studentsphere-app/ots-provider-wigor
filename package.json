@@ -1,6 +1,6 @@
 {
 	"name": "@studentsphere/ots-provider-wigor",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"type": "module",
 	"description": "Wigor Timetable implementation of a Open Timetable Scrapper Provider",
 	"author": {
@@ -8,47 +8,28 @@
 		"email": "contact@studentsphere.app",
 		"url": "https://studentsphere.app"
 	},
-	"social": {
-		"x": "https://x.com/studentsphere-app",
-		"linkedin": "https://linkedin.com/in/studentsphere-app",
-		"discord": "https://discord.gg/n4r6QrhvYj"
-	},
 	"license": "MIT",
 	"homepage": "https://github.com/studentsphere-app/ots-provider-wigor#readme",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/studentsphere-app/ots-provider-wigor.git"
 	},
-	"bugs": {
-		"url": "https://github.com/studentsphere-app/ots-provider-wigor/issues"
-	},
-	"keywords": [
-		"ots",
-		"provider",
-		"wigor",
-		"studentsphere",
-		"timetable"
-	],
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"files": [
-		"dist",
-		"src/index.ts"
-	],
-	"publishConfig": {
-		"access": "public"
-	},
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
-			"source": "./src/index.ts",
 			"import": "./dist/index.js",
-			"default": "./dist/index.js"
+			"require": "./dist/index.cjs"
 		}
 	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
-		"build": "tsc -b",
-		"watch": "tsc -b -w",
+		"build": "tsup src/index.ts --format esm,cjs --dts --clean",
+		"dev": "tsup src/index.ts --format esm,cjs --watch --dts",
 		"lint": "biome check .",
 		"lint:fix": "biome check --write .",
 		"format": "biome format --write .",
@@ -59,6 +40,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.4",
+		"tsup": "^8.5.1",
 		"typescript": "^5.0.0"
 	}
 }
